@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        div.conteiner{
+            background-color: rgba(211, 211, 211, 0.29);
+            border: 4px solid rgba(211, 211, 211, 0.452);
+            border-radius: 10px;
+            
+            display: flex;
+            flex-flow: row wrap;
+        }
+        div.item{
+            background-color: rgba(100, 100, 100, 0.503);
+            border-radius: 10px;
+            text-align: center;
+            flex: auto;
+            margin: 10px  10px;
+            width: 100px;
+            height: 100px;
+            cursor: pointer;
+        }
+        div.item:hover{
+            background-color: lightgray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">
+            Exemplo de bloco A
+        </div>
+        <div class="item">
+            Exemplo de bloco B
+        </div>
+        <div class="item">
+            Exemplo de bloco C
+        </div>
+        <div class="item">
+            Exemplo de bloco D
+        </div>
+        
+        <div class="item">
+            Exemplo de bloco E
+        </div>
+        <div class="item">
+            Exemplo de bloco F
+        </div>
+        <div class="item">
+            Exemplo de bloco G
+        </div>
+        <div class="item">
+            Exemplo de bloco H
+        </div>
+    </div>
+</body>
+</html>
