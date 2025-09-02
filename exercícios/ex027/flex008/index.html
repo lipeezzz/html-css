@@ -5,51 +5,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flexbox</title>
     <style>
-        div.conteiner{
+        div.conteiner {
             background-color: aqua;
             display: flex;
-            flex-flow: column;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            height: 400px;
         }
-        div.item{
+
+        div.item {
             background-color: chartreuse;
             border: 1px solid black;
             text-align: center;
             padding: 20px;
             
-      
+            
+        }
+
+        #i1 {
+            align-self: center;
+        }
+
+        #i3 {
+            align-self: stretch;
+        }
+
+        #i4 {
+            align-self: flex-end;
+        }
+
+        #i5 {
+            align-self: center;
+        }
+
+        #i7 {
+            align-self: flex-end;
+        }
 
 
     </style>
 </head>
 <body>
     <div class="conteiner">
-        <div class="item" id="i1
-        ">
+        <div class="item" id="i1">
             A
         </div>
-        <div class="item" id="i2
-        ">
+        <div class="item" id="i2">
             B
         </div>
-        <div class="item" id="i3
-        ">
+        <div class="item" id="i3">
             C
         </div>
-        <div class="item" id="i4
-        ">
+        <div class="item" id="i4">
             D
         </div>
         
-        <div class="item" id="i5
-        ">
+        <div class="item" id="i5">
             E
         </div>
-        <div class="item" id="i6
-        ">
+        <div class="item" id="i6">
             F
         </div>
-        <div class="item" id="i7
-        ">
+        <div class="item" id="i7">
             G
         </div>
     </div>

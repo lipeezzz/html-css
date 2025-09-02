@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <style>
+        body {
+            background-color: lightgray;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h2{
+            color: rgb(255, 255, 255);
+            text-shadow: 2px 2px 7px black;
+            margin: 30px 0px;
+            font-size: 1.5em;
+            text-align: center;
+
+        }
+
+        div.conteiner {
+            background-color: aqua;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 20px;
+            flex-flow: row nowrap;
+            width: 500px;
+            height: 100px;
+            margin: auto;
+
+        }
+
+        div.item {
+            background-color: chartreuse;
+            border: 1px solid black;
+            text-align: center;
+            align-self: center;
+            padding: 20px;
+            border-radius: 15px;
+            margin: auto;
+            flex-basis: 50px;
+            flex-grow: 0;
+            flex-shrink: 1;
+
+        }
+
+        div.c {
+            background-color: aqua;
+            display: flex;
+            flex-flow: row nowrap;
+
+        }
+
+        div.i {
+            background-color: chartreuse;
+            border: 1px solid black;
+            text-align: center;
+            flex-basis: 250px;
+            flex-grow: 1;
+            flex-shrink: 1;
+        }
+
+        div.co {
+            background-color: aqua;
+            display: flex;
+            border: 1px solid black;
+            border-radius: 20px;
+            flex-flow: row nowrap;
+            width: 500px;
+            height: 100px;
+            margin: auto;
+
+        }
+
+        div.it {
+            background-color: chartreuse;
+            border: 1px solid black;
+            text-align: center;
+            align-self: center;
+            padding: 20px;
+            border-radius: 15px;
+            margin: auto;
+            flex-basis: 50px;
+            flex-grow: 0;
+            flex-shrink: 0;
+        }
+
+        div.it2 {
+            background-color: chartreuse;
+            border: 1px solid black;
+            text-align: center;
+            align-self: center;
+            padding: 20px;
+            border-radius: 15px;
+            margin: auto;
+            flex-basis: 50px;
+            flex-grow: 1;
+            flex-shrink: 0;
+        }
+
+        div.it3 {
+            background-color: chartreuse;
+            border: 1px solid black;
+            text-align: center;
+            align-self: center;
+            padding: 20px;
+            border-radius: 15px;
+            margin: auto;
+            flex-basis: 50px;
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Primeiro Exemplo</h2>
+
+    <div class="conteiner">
+        <div class="item">
+            A
+        </div>
+        <div class="item">
+            B
+        </div>
+        <div class="item">
+            C
+        </div>
+    </div>
+
+    <h2>Segundo Exemplo</h2>
+
+    <div class="c">
+        <div class="i">
+            A
+        </div>
+        <div class="i">
+            B
+        </div>
+        <div class="i">
+            C
+        </div>
+    </div>
+
+    <h2>Terceiro Exemplo</h2>
+
+    <div class="co">
+        <div class="it">
+            0
+        </div>
+        <div class="it2">
+            1
+        </div>
+        <div class="it3">
+            2
+        </div>
+</body>
+</html>
